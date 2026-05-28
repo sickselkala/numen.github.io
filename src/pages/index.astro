@@ -2,35 +2,52 @@
 import Layout from '../layouts/Layout.astro';
 ---
 
-<Layout title="Numen APS | Giovani in movimento a Santa Vittoria in Matenano">
-  
+<Layout title="Numen APS | Associazione di Promozione Sociale Santa Vittoria in Matenano">
+
   <!-- HERO SECTION -->
-  <section class="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden">
-    <!-- Abstract Background Elements -->
+    <section class="relative min-h-screen flex items-center justify-center pt-32 pb-20 overflow-hidden bg-gradient-to-b from-zinc-900 via-zinc-950 to-black">
     <div class="absolute inset-0 z-0">
-      <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-white/5 rounded-full mix-blend-overlay filter blur-3xl opacity-70 animate-blob"></div>
-      <div class="absolute top-1/3 right-1/4 w-96 h-96 bg-gray-500/10 rounded-full mix-blend-overlay filter blur-3xl opacity-70 animate-blob animation-delay-2000"></div>
-      <div class="absolute -bottom-32 left-1/2 w-[40rem] h-[40rem] bg-white/5 rounded-full mix-blend-overlay filter blur-3xl opacity-50"></div>
+      <div class="absolute top-1/4 left-1/3 w-[500px] h-[500px] bg-white/[0.04] rounded-full filter blur-[120px] animate-pulse"></div>
     </div>
 
-    <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-white/20 bg-white/5 backdrop-blur-sm text-sm text-gray-300 mb-8">
-        <span class="w-2 h-2 rounded-full bg-green-500 animate-pulse"></span>
-        Associazione Giovanile · Entroterra Marchigiano
+    <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center flex flex-col items-center">
+      
+      <div class="mb-12 relative group animate-fade-in">
+        <div class="absolute -inset-6 bg-gradient-to-r from-zinc-400 via-white to-zinc-600 opacity-20 blur-3xl group-hover:opacity-40 transition-opacity duration-700 rounded-full z-0"></div>
+        
+        <div class="relative z-10 p-[2px] rounded-[2rem] bg-gradient-to-b from-white/50 via-white/10 to-white/5 shadow-[0_0_50px_rgba(255,255,255,0.1)] group-hover:shadow-[0_0_80px_rgba(255,255,255,0.2)] transition-all duration-700 transform group-hover:-translate-y-2">
+          <div class="bg-black p-3 rounded-[calc(2rem-2px)] flex items-center justify-center">
+            <div class="overflow-hidden rounded-2xl">
+              <img 
+                src="/assets/logo-big.jpg" 
+                alt="Numen Logo" 
+                class="w-56 md:w-72 lg:w-80 h-auto transform group-hover:scale-105 transition-transform duration-700"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-white/10 bg-white/5 backdrop-blur-md text-xs uppercase tracking-widest text-zinc-300 mb-8 animate-fade-in delay-1">
+        <span class="w-2 h-2 rounded-full bg-white animate-ping"></span>
+        Associazione Giovanile · Santa Vittoria in Matenano
       </div>
       
-      <h1 class="text-5xl md:text-7xl lg:text-8xl font-display font-bold tracking-tighter text-white mb-6 uppercase">
-        <span class="block">Oltre i confini,</span>
-        <span class="block text-transparent bg-clip-text bg-gradient-to-r from-white via-gray-300 to-gray-600">dentro le radici.</span>
+      <h1 class="text-5xl md:text-7xl lg:text-8xl font-display font-bold tracking-tighter text-white mb-6 uppercase animate-fade-in delay-2">
+        <span class="block text-transparent bg-clip-text bg-gradient-to-b from-white to-zinc-400">Oltre i confini,</span>
+        <span class="block text-transparent bg-clip-text bg-gradient-to-r from-zinc-400 via-zinc-100 to-zinc-600">dentro le radici.</span>
       </h1>
       
-      <p class="mt-6 text-lg md:text-xl text-gray-400 max-w-2xl mx-auto leading-relaxed font-light">
+      <p class="mt-6 text-lg md:text-xl text-gray-400 max-w-2xl mx-auto leading-relaxed font-light animate-fade-in delay-2">
         Siamo Numen APS. Una rete di menti dai 22 ai 26 anni unita per creare eventi, innovazione e connessioni a Santa Vittoria in Matenano.
       </p>
       
-      <div class="mt-10 flex flex-col sm:flex-row justify-center gap-4">
+      <div class="mt-10 flex flex-col sm:flex-row justify-center gap-4 animate-fade-in delay-2">
         <a href="/tesseramento" class="px-8 py-4 bg-white text-brand-dark rounded-full font-bold uppercase tracking-widest text-sm hover:scale-105 transition-transform duration-300">
           Entra in Numen
+        </a>
+        <a href="/supportaci" class="px-8 py-4 bg-[#bbf7d0] text-green-950 rounded-full font-bold uppercase tracking-widest text-sm hover:scale-105 transition-transform duration-300 shadow-[0_0_20px_rgba(187,247,208,0.3)]">
+          Supportaci
         </a>
         <a href="#progetti" class="px-8 py-4 border border-white/30 text-white rounded-full font-bold uppercase tracking-widest text-sm hover:bg-white/10 transition-colors duration-300">
           Scopri di più
@@ -38,7 +55,6 @@ import Layout from '../layouts/Layout.astro';
       </div>
     </div>
   </section>
-
   <!-- CHI SIAMO PREVIEW -->
   <section id="progetti" class="py-24 bg-black relative">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -68,19 +84,22 @@ import Layout from '../layouts/Layout.astro';
   </section>
 
   <!-- EVENTI & MATENANO KINGS CUP HIGHLIGHT -->
-  <section class="py-24 bg-brand-dark border-y border-white/5">
+    <section class="py-24 bg-brand-dark border-y border-white/5">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center mb-16">
         <h2 class="text-3xl md:text-5xl font-display font-bold text-white mb-4 uppercase tracking-tight">I Nostri Eventi</h2>
-        <p class="text-gray-400 max-w-2xl mx-auto">Aperitivi e competizione sana. Ecco cosa bolle in pentola.</p>
+        <p class="text-gray-400 max-w-2xl mx-auto">Aperitivi, cultura e competizione sana. Ecco cosa bolle in pentola.</p>
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-        <!-- Matenano Kings Cup Card -->
-        <div class="group relative rounded-3xl overflow-hidden bg-zinc-900 border border-white/10 aspect-[4/3] flex flex-col justify-end p-8 hover:border-white/30 transition-colors">
-          <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent z-10"></div>
-          <!-- Placeholder per immagine background torneo -->
-          <div class="absolute inset-0 bg-zinc-800 group-hover:scale-105 transition-transform duration-700"></div>
+        <div class="group relative rounded-3xl overflow-hidden bg-zinc-900 border border-white/10 aspect-[4/3] flex flex-col justify-end p-8 hover:border-white/30 transition-all duration-300">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/95 via-black/50 to-transparent z-10"></div>
+          
+          <img 
+            src="/assets/mkc.jpeg" 
+            alt="Matenano Kings Cup" 
+            class="absolute inset-0 w-full h-full object-cover opacity-40 group-hover:scale-105 transition-transform duration-700 z-0"
+          />
           
           <div class="relative z-20">
             <span class="inline-block px-3 py-1 bg-white text-black text-xs font-bold uppercase tracking-widest mb-4 rounded-sm">Torneo Ufficiale</span>
@@ -92,10 +111,14 @@ import Layout from '../layouts/Layout.astro';
           </div>
         </div>
 
-        <!-- Prossimi Eventi Card -->
-        <div class="group relative rounded-3xl overflow-hidden bg-zinc-900 border border-white/10 aspect-[4/3] flex flex-col justify-end p-8 hover:border-white/30 transition-colors">
-          <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent z-10"></div>
-          <div class="absolute inset-0 bg-zinc-800 group-hover:scale-105 transition-transform duration-700"></div>
+        <div class="group relative rounded-3xl overflow-hidden bg-zinc-900 border border-white/10 aspect-[4/3] flex flex-col justify-end p-8 hover:border-white/30 transition-all duration-300">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/95 via-black/50 to-transparent z-10"></div>
+          
+          <img 
+            src="/assets/eventi.jpeg" 
+            alt="Prossimi Appuntamenti" 
+            class="absolute inset-0 w-full h-full object-cover opacity-40 group-hover:scale-105 transition-transform duration-700 z-0"
+          />
           
           <div class="relative z-20">
             <span class="inline-block px-3 py-1 border border-white/30 text-white text-xs font-bold uppercase tracking-widest mb-4 rounded-sm">Calendario</span>
@@ -203,3 +226,29 @@ import Layout from '../layouts/Layout.astro';
   </section>
 
 </Layout>
+<style>
+  /* Nascondiamo l'elemento all'inizio e lo spingiamo in basso di 30px */
+  .animate-fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    /* L'animazione dura 1 secondo e alla fine si "ferma" (forwards) nello stato finale */
+    animation: fadeInUpCustom 1s ease-out forwards;
+  }
+
+  /* Ritardi per far apparire gli elementi in sequenza */
+  .delay-1 {
+    animation-delay: 0.3s;
+  }
+  
+  .delay-2 {
+    animation-delay: 0.6s;
+  }
+
+  /* La regola dell'animazione: passa a opacità 1 e torna alla posizione originale (0) */
+  @keyframes fadeInUpCustom {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+</style>
