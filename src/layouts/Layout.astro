@@ -1,0 +1,68 @@
+---
+import Navbar from '../components/Navbar.astro';
+import Footer from '../components/Footer.astro';
+import { ViewTransitions } from 'astro:transitions';
+
+interface Props {
+  title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Numen APS - Associazione Giovanile di Santa Vittoria in Matenano" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+    
+    <ViewTransitions />
+  </head>
+  <body class="bg-black text-white font-sans antialiased flex flex-col min-h-screen">
+    <Navbar />
+    <main class="flex-grow">
+      <slot />
+    </main>
+    <Footer />
+
+    <script>
+      // Importiamo Lenis, AOS e il CSS di AOS direttamente nel bundle JavaScript
+      import Lenis from 'lenis';
+      import AOS from 'aos';
+      import 'aos/dist/aos.css';
+
+      // Inizializza lo scroll fluido
+      const lenis = new Lenis({
+        autoRaf: true,
+        duration: 1.2,
+      });
+
+      // L'evento 'astro:page-load' assicura che AOS si riavvii correttamente 
+      // ogni volta che cambi pagina senza ricaricare il browser
+      document.addEventListener('astro:page-load', () => {
+        AOS.init({
+          duration: 800, // durata animazione in ms
+          once: true,    // anima solo alla prima discesa
+          offset: 50,    // quanti pixel prima di attivarsi
+        });
+        
+        // Un piccolo fix per forzare l'aggiornamento delle posizioni se cambi pagina velocemente
+        setTimeout(() => {
+          AOS.refresh();
+        }, 100);
+      });
+    </script>
+  </body>
+</html>
+
+<style is:global>
+  ::selection {
+    background-color: #ffffff;
+    color: #000000;
+  }
+</style>
