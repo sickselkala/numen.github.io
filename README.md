@@ -1,46 +1,32 @@
-# Astro Starter Kit: Basics
+# Numen APS - Sito Ufficiale 🦅
 
-```sh
-npm create astro@latest -- --template basics
-```
+![Astro](https://img.shields.io/badge/Astro-0C1120?style=for-the-badge&logo=astro&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![Lenis](https://img.shields.io/badge/Lenis_Scroll-000000?style=for-the-badge)
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+Il repository ufficiale del sito web di **Numen APS**, associazione giovanile di Santa Vittoria in Matenano (FM). 
+Progettato per essere veloce, accessibile e con un design "premium" pensato per valorizzare le iniziative, il tesseramento e la *Matenano Kings Cup*.
 
-## 🚀 Project Structure
+## ✨ Funzionalità Principali
 
-Inside of your Astro project, you'll see the following folders and files:
+* **Design Moderno:** Interfaccia scura ad alto contrasto con effetti *glassmorphism*.
+* **Navigazione Fluida:** Transizioni senza caricamento tra le pagine grazie ad **Astro View Transitions**.
+* **Smooth Scrolling:** Inerzia di scorrimento morbida implementata tramite **Lenis**.
+* **Animazioni Dinamiche:** Comparsa degli elementi allo scroll gestita con **AOS (Animate On Scroll)**.
+* **Performance:** Ottimizzato per caricamenti istantanei e punteggi massimi su Lighthouse.
 
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src
-│   ├── assets
-│   │   └── astro.svg
-│   ├── components
-│   │   └── Welcome.astro
-│   ├── layouts
-│   │   └── Layout.astro
-│   └── pages
-│       └── index.astro
-└── package.json
-```
+## 🚀 Tecnologie Utilizzate
 
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
+* [Astro](https://astro.build/) - Framework web principale
+* [Tailwind CSS](https://tailwindcss.com/) - Utility-first CSS framework
+* [Lenis](https://github.com/darkroomengineering/lenis) - Smooth scroll library
+* [AOS](https://michalsnik.github.io/aos/) - Animate On Scroll library
 
-## 🧞 Commands
+## 📦 Installazione e Sviluppo Locale
 
-All commands are run from the root of the project, from a terminal:
+Per far girare il progetto sul tuo computer, segui questi passaggi:
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+1. **Clona il repository:**
+```bash
+   git clone [https://github.com/tuo-username/numenaps.git](https://github.com/tuo-username/numenaps.git)
+   cd numenaps
