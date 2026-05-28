@@ -28,15 +28,17 @@ const currentYear = new Date().getFullYear();
         <h3 class="text-white font-display font-bold uppercase tracking-wider mb-4">Partecipa</h3>
         <ul class="space-y-3">
           <li><a href="/tesseramento" class="text-gray-400 hover:text-white transition-colors text-sm">Diventa Socio</a></li>
-          <li><a href="#" class="text-gray-400 hover:text-white transition-colors text-sm">Supporta i nostri progetti</a></li>
-          <li><a href="#" class="text-gray-400 hover:text-white transition-colors text-sm">FAQ Tesseramento</a></li>
+          <li><a href="/supportaci" class="text-gray-400 hover:text-white transition-colors text-sm">Supporta i nostri progetti</a></li>
+          <li><a href="/tesseramento" class="text-gray-400 hover:text-white transition-colors text-sm">FAQ Tesseramento</a></li>
         </ul>
       </div>
 
       <div>
         <h3 class="text-white font-display font-bold uppercase tracking-wider mb-4">Contatti</h3>
         <ul class="space-y-3 mb-6">
-          <li class="text-gray-400 text-sm">Santa Vittoria in Matenano (FM)</li>
+          <li class="text-gray-400 text-sm">Numen APS - Palazzo Monti, Corso Giacomo Matteotti 50, Santa Vittoria in Matenano (FM)<br>
+PEC: numenaps@pec.it CF 90075840448
+</li>
           <li><a href="mailto:numenaps@outlook.it" class="text-gray-400 hover:text-white transition-colors text-sm">numenaps@outlook.it</a></li>
         </ul>
         
@@ -62,15 +64,38 @@ const currentYear = new Date().getFullYear();
       </div>
 
     </div>
-    
-    <div class="mt-12 pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center">
+        <div class="mt-12 pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center">
       <p class="text-xs text-gray-500 uppercase tracking-widest">
-        &copy; {currentYear} Numen APS. Tutti i diritti riservati.
+        &copy; {currentYear} Numen APS. Tutti i diritti riservati | Made with ❤️ by sickselkala.
       </p>
       <div class="mt-4 md:mt-0 flex space-x-4">
-        <a href="#" class="text-xs text-gray-500 hover:text-white transition-colors">Privacy Policy</a>
-        <a href="#" class="text-xs text-gray-500 hover:text-white transition-colors">Cookie Policy</a>
+        <a 
+          href="https://www.iubenda.com/privacy-policy/58321660" 
+          class="iubenda-white iubenda-noiframe iubenda-embed !text-xs !text-gray-500 hover:!text-white !transition-colors !font-sans !font-normal !no-underline" 
+          title="Privacy Policy"
+        >
+          Privacy Policy
+        </a>
+        <a 
+          href="https://www.iubenda.com/privacy-policy/58321660/cookie-policy" 
+          class="iubenda-white iubenda-noiframe iubenda-embed !text-xs !text-gray-500 hover:!text-white !transition-colors !font-sans !font-normal !no-underline" 
+          title="Cookie Policy"
+        >
+          Cookie Policy
+        </a>
       </div>
     </div>
-  </div>
 </footer>
+
+<script is:inline type="text/javascript">
+  (function (w,d) {
+    var loader = function () {
+      var s = d.createElement("script"), tag = d.getElementsByTagName("script")[0]; 
+      s.src="https://cdn.iubenda.com/iubenda.js"; 
+      tag.parentNode.insertBefore(s,tag);
+    }; 
+    if(w.addEventListener){w.addEventListener("load", loader, false);}
+    else if(w.attachEvent){w.attachEvent("onload", loader);}
+    else{w.onload = loader;}
+  })(window, document);
+</script>
